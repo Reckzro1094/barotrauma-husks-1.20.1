@@ -1,5 +1,6 @@
 package bryce.barotraumahusks;
 
+import bryce.barotraumahusks.effects.Huskeffects;
 import bryce.barotraumahusks.item.HuskItems;
 import bryce.barotraumahusks.item.Huskitemsgroups;
 import net.fabricmc.api.ModInitializer;
@@ -16,5 +17,6 @@ public class BarotraumaHusks implements ModInitializer {
 
 		Huskitemsgroups.registerItemGroups();
 		HuskItems.registerHuskItems();
+		Huskeffects.registerEffects();
 	}
 }
