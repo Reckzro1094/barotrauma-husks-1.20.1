@@ -1,6 +1,7 @@
 package bryce.barotraumahusks;
 
 import bryce.barotraumahusks.item.HuskItems;
+import bryce.barotraumahusks.item.Huskitemsgroups;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -13,7 +14,7 @@ public class BarotraumaHusks implements ModInitializer {
 	@Override
 	public void onInitialize() {
 
-
+		Huskitemsgroups.registerItemGroups();
 		HuskItems.registerHuskItems();
 	}
 }
