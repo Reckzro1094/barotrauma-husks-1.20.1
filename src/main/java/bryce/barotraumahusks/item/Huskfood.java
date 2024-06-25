@@ -8,5 +8,5 @@ import net.minecraft.item.FoodComponent;
 
 public class Huskfood {
     public static final FoodComponent calyxeggs = new FoodComponent.Builder()
-            .statusEffect(new StatusEffectInstance(StatusEffects.HUNGER, 120), 0.3f).build();
+            .statusEffect(new StatusEffectInstance(StatusEffects.SLOWNESS, 1200), 0.3f).build();
 }

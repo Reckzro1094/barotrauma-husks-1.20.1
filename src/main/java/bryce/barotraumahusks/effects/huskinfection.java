@@ -14,7 +14,7 @@ public class huskinfection extends StatusEffect {
     public void applyUpdateEffect(LivingEntity entity, int amplifier) {
         if (this == Huskeffects.huskinfection) {
             if (entity.getHealth() < entity.getMaxHealth()) {
-                entity.heal(0.25F);
+                entity.heal(0.75F);
             }
         }
     }
