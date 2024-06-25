@@ -23,7 +23,6 @@ public class HuskItems {
     public static void registerHuskItems() {
         BarotraumaHusks.LOGGER.info("Registering Mod Items for " + BarotraumaHusks.MOD_ID);
 
-        ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(HuskItems::addItemsToIngredientTab);
     }
 
 }
