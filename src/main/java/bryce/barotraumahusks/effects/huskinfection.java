@@ -18,7 +18,7 @@ public class huskinfection extends StatusEffect {
                 entity.heal(0.75F);
             }
             if (entity.getAir() < entity.getMaxAir()) {
-                entity.addStatusEffect(new StatusEffectInstance(StatusEffects.WATER_BREATHING,20,1));
+                entity.addStatusEffect(new StatusEffectInstance(StatusEffects.WATER_BREATHING,40, 0));
             }
             if (this == Huskeffects.huskinfection) {
                 entity.addStatusEffect(new StatusEffectInstance(StatusEffects.STRENGTH, 10000, 1));

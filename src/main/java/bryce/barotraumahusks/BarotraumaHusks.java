@@ -15,8 +15,8 @@ public class BarotraumaHusks implements ModInitializer {
 	@Override
 	public void onInitialize() {
 
+		Huskeffects.registerEffects();
 		Huskitemsgroups.registerItemGroups();
 		HuskItems.registerHuskItems();
-		Huskeffects.registerEffects();
 	}
 }
