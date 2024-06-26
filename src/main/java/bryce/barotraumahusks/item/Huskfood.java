@@ -9,4 +9,5 @@ public class Huskfood {
     public static final FoodComponent calyxeggs = new FoodComponent.Builder().hunger(3).saturationModifier(1)
             .statusEffect(new StatusEffectInstance(Huskeffects.huskinfection, 48000), 0.7f).build();
 
+
 }
