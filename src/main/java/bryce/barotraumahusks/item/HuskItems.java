@@ -15,7 +15,10 @@ public class HuskItems {
 
     private static Item registerItem(Item item) {
         return Registry.register(Registries.ITEM, new Identifier(BarotraumaHusks.MOD_ID, "calyxeggs"), item);
+
     }
+
+
     public static void registerHuskItems() {
         BarotraumaHusks.LOGGER.info("Registering Mod Items for " + BarotraumaHusks.MOD_ID);
 
