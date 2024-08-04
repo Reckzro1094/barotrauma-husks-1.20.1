@@ -29,11 +29,18 @@ public class huskinfection extends StatusEffect {
                 entity.addStatusEffect(new StatusEffectInstance(StatusEffects.WATER_BREATHING,20,0, ambient, showParticles));
             }
 
-            entity.addStatusEffect(new StatusEffectInstance(StatusEffects.STRENGTH, 60, 1, ambient, showParticles));
+
+
+
+            if (entity.hasStatusEffect(Huskeffects.husksymbiosis)) {
+                entity.removeStatusEffect(Huskeffects.huskinfection);
+            }
+
 
 
         }
     }
+
 
     public boolean canApplyUpdateEffect(int duration, int amplifier) {
         if (this == Huskeffects.huskinfection) {
