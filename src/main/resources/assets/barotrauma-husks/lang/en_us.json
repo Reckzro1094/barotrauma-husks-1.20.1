@@ -1,5 +1,6 @@
 {
   "item.barotrauma-husks.calyxeggs": "Calyx Eggs",
   "itemgroup.calyxeggs": "Barotrauma Husk Items",
-  "effect.barotrauma-husks.huskinfection": "Husk Infection"
+  "effect.barotrauma-husks.huskinfection": "Husk Infection",
+  "effect.barotrauma-husks.husksymbiosis": "Husk Symbiosis"
 }

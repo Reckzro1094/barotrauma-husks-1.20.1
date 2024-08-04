@@ -8,13 +8,21 @@ import net.minecraft.util.Identifier;
 
 public class Huskeffects {
     public static bryce.barotraumahusks.effects.huskinfection huskinfection;
+    public static bryce.barotraumahusks.effects.husksymbiosis husksymbiosis;
 
     public static bryce.barotraumahusks.effects.huskinfection registerhuskinfectionEffect(String name){
         return Registry.register(Registries.STATUS_EFFECT, new Identifier(BarotraumaHusks.MOD_ID, name),
             new huskinfection(StatusEffectCategory.HARMFUL, 1234567));
     }
 
+    public static bryce.barotraumahusks.effects.husksymbiosis registerhusksymbiosisEffect(String name){
+        return Registry.register(Registries.STATUS_EFFECT, new Identifier(BarotraumaHusks.MOD_ID, name),
+                new husksymbiosis(StatusEffectCategory.BENEFICIAL, 1234567));
+    }
+
     public static void registerEffects(){
         huskinfection = registerhuskinfectionEffect("huskinfection");
+        husksymbiosis = registerhusksymbiosisEffect("husksymbiosis");
     }
+
 }
