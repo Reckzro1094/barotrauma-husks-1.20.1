@@ -35,6 +35,8 @@ public class husksymbiosis extends StatusEffect {
             entity.addStatusEffect(new StatusEffectInstance(StatusEffects.STRENGTH, 60, 1, ambient, showParticles));
 
             entity.addStatusEffect(new StatusEffectInstance(StatusEffects.SPEED, 60, 1, ambient,showParticles));
+
+            entity.addStatusEffect(new StatusEffectInstance(StatusEffects.JUMP_BOOST, 60, 1, ambient, showParticles));
         }
     }
 
