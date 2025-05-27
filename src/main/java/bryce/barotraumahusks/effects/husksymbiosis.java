@@ -33,9 +33,9 @@ public class husksymbiosis extends StatusEffect {
                 entity.addStatusEffect(new StatusEffectInstance(StatusEffects.WATER_BREATHING,60,0, ambient, showParticles));
             }
 
-            if (this == StatusEffects.POISON){
-                entity.removeStatusEffect(StatusEffects.POISON);
-            }
+
+            entity.removeStatusEffect(StatusEffects.POISON);
+            
 
             entity.addStatusEffect(new StatusEffectInstance(StatusEffects.JUMP_BOOST, 80, 0, ambient, showParticles));
         }
